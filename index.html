@@ -1,16 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AirBNB - BEM</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300,400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="build/css/app.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AirBNB - BEM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300,400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
+  <header class="header">
+    <div class="bar container">
+      <div class="bar__logo">
+        <p class="bar__name">Viaje</p>
+      </div>
+      <nav class="bar__navigation">
+        <a href="#" class="bar__link">Lugares para hospedarte</a>
+        <a href="#" class="bar__link">Experiencias</a>
+        <a href="#" class="bar__link">Experiencias en línea</a>
+      </nav>
+      <nav class="bar__login">
+        <a href="#" class="bar__link">Haste Anfitrión</a>
+      </nav>
+    </div>
 
+    <form class="form container">
+      <div class="form__field">
+        <label for="ubication" class="form__label">Ubicación</label>
+        <input type="text" class="form__input" id="ubication" placeholder="¿A dónde viajas?">
+      </div>
+      <div class="form__field">
+        <label for="arrival" class="form__label">Llegada</label>
+        <input type="date" class="form__input" id="arrival">
+      </div>
+      <div class="form__field">
+        <label for="departure" class="form__label">Salida</label>
+        <input type="date" class="form__input" id="departure">
+      </div>
+      <div class="form__field">
+        <label for="guest" class="form__label">Huéspedes</label>
+        <input type="number" class="form__input" id="guest" placeholder="¿Cuántos?">
+      </div>
+      <div class="form__field">
+        <input type="submit" class="form__submit" value="Buscar">
+      </div>
+    </form>
+    <div class="header__search container">
+      <p class="header__search-label">¿No sabes a dónde ir?</p>
+      <a href="#" class="header__search-button">Búsqueda flexible</a>
+    </div>
+  </header>
 </body>
 </html>

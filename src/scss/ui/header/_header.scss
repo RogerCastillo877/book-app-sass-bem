@@ -1,0 +1,20 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header {
+  background-image: url('../img/header.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 3rem 0 20rem 0;
+
+  &__search {
+    margin-top: 5rem;
+    @include m.tablet {
+      text-align: center;
+      margin-top: 30rem;
+    }
+  }
+  &__search-button {
+    @include m.boton(v.$blanco, v.$primario)
+  }
+}
